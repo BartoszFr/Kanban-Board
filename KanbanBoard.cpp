@@ -32,7 +32,7 @@ Mechanizmy:
 Przykładowe dane do wczytania znajdują się pod nazwą "plik.csv".
 
 Podczas pracy programu proszę rozszerzyć okno konsoli tak, aby pomieściła około 150 znaków.
-Podobnie proszę porozszerzać komórki w programie Excel, gdyż wpisane dane są przeważnie zbyt długie.
+Podobnie proszę rozszerzyć komórki w programie Excel, gdyż wpisane dane są przeważnie zbyt długie.
 */
 
 int main(void) {
