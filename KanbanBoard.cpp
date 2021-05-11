@@ -3,15 +3,20 @@
 #include <vld.h>
 
 /*
+Do projektu doda³em pliki: decyzja.cpp, decyzja.h, Zly_zakres.cpp oraz Zly_zakres.h,
+jak równie¿ skorygowany diagram.
+Klasa Zly_zakres dziedzicz¹ca po exception zosta³a wziêta z projektu 3. RównaniaLiniowe
+i dopasowana do obecnych potrzeb.
+
 Mechanizmy:
 1. Operatory:
 	- Zadanie
 
-2. ZarzÄ…dzanie pamiÄ™ciÄ…:
+2. Zarz¹dzanie pamiêci¹:
 	- Zadanie
 	- Student
 
-3. WyjÄ…tki:
+3. Wyj¹tki:
 	- Zly_zakres
 	- Kolumna
 	- ToDo, Doing, Done
@@ -29,17 +34,17 @@ Mechanizmy:
 	- Tablica
 	- Student
 
-PrzykÅ‚adowe dane do wczytania znajdujÄ… siÄ™ pod nazwÄ… "plik.csv".
+Przygotowa³em przyk³adowe dane do wczytania pod nazw¹ "plik".
 
-Podczas pracy programu proszÄ™ rozszerzyÄ‡ okno konsoli tak, aby pomieÅ›ciÅ‚a okoÅ‚o 150 znakÃ³w.
-Podobnie proszÄ™ rozszerzyÄ‡ komÃ³rki w programie Excel, gdyÅ¼ wpisane dane sÄ… przewaÅ¼nie zbyt dÅ‚ugie.
+Podczas pracy programu proszê rozszerzyæ okno konsoli tak, aby pomieœci³a oko³o 150 znaków.
+Podobnie proszê porozszerzaæ komórki w programie Excel, gdy¿ wpisane dane s¹ przewa¿nie za d³ugie.
 */
 
 int main(void) {
 	char tab51[51];
 	setlocale(LC_ALL, "polish");
 
-	std::cout << "Podaj nazwÄ™ studenta (max 50 znakÃ³w):" << std::endl;
+	std::cout << "Podaj nazwê studenta (max 50 znaków):" << std::endl;
 	std::cin.get(tab51, 51);
 	std::cin.ignore(std::numeric_limits <std::streamsize>::max(), '\n');
 	Student student(tab51);

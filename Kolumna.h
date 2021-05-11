@@ -2,6 +2,7 @@
 #include <iostream>
 #include <algorithm>
 #include <vector>
+#include <math.h>
 #include "Zadanie.h"
 #include "Zly_zakres.h"
 

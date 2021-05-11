@@ -1,6 +1,5 @@
 #pragma once
 #include "Kolumna.h"
-#include <math.h>
 
 class Done :
 	public Kolumna

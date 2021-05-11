@@ -35,11 +35,17 @@ void ToDo::przypomnij(int _nrZadania) {
 		dzienLokalny = czasLokalny->tm_yday;
 		if ( ( ((rokLokalny % 4) == 0) && ((rokLokalny % 100) != 0) ) || ((rokLokalny % 400) == 0) )
 			przestepny = true;
-		if ((rokTermin - rokLokalny) != 0) {//termin przypada w nastêpnym roku
+		if ((rokTermin - rokLokalny) > 0) {//termin przypada w nastêpnym roku
 			if (przestepny)//rok przestepny
 				pozostaloDni = 366 - dzienLokalny + dzienTermin;
 			else//rok zwyk³y
 				pozostaloDni = 365 - dzienLokalny + dzienTermin;
+		}
+		else if ((rokTermin - rokLokalny) < 0) {//termin min¹³ roku temu
+			if (przestepny)//rok przestepny
+				pozostaloDni = (rokTermin - rokLokalny) * 366 + dzienTermin - dzienLokalny;
+			else//rok zwyk³y
+				pozostaloDni = (rokTermin - rokLokalny) * 365 + dzienTermin - dzienLokalny;
 		}
 		else {//termin w tym samym roku
 			pozostaloDni = dzienTermin - dzienLokalny;
