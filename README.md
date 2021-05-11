@@ -2,7 +2,7 @@
 
 
 ![Kanban Board](https://user-images.githubusercontent.com/80910359/117806905-366fd980-b25b-11eb-9c1c-1dc3276ca359.png)
-*Diagram UML aplikacji*
+*Diagram UML*
 
 Aplikacja została wykonana w ramach zajęć laboratoryjnych *Programowanie w C++*.
 
